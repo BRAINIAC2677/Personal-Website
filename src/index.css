@@ -1,3 +1,12 @@
+:root {
+  --magic-col-1: #22d2a0;
+  --background: #192824;
+  --magic-col-2: #1fc11b;
+  --magic-col-3: #ffd913;
+  --magic-col-4: #ff9c55;
+  --magic-col-5: #ff5555;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,6 +31,69 @@
 
   .contact-icons {
     @apply text-5xl;
+  }
+
+  .magic-card {
+    width: 300px;
+    height: 90px;
+    border: 3px solid var(--magic-col-1);
+    box-shadow: 10px -10px 0 -3px var(--background),
+      10px -10px var(--magic-col-2), 20px -20px 0 -3px var(--background),
+      20px -20px var(--magic-col-3), 30px -30px 0 -3px var(--background),
+      30px -30px var(--magic-col-4), 40px -40px 0 -3px var(--background),
+      40px -40px var(--magic-col-5);
+    animation: shadow-wave 1s ease infinite;
+  }
+
+  @keyframes shadow-wave {
+    0% {
+      border: 3px solid var(--magic-col-1);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-2), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-3), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-4), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-5);
+    }
+    20% {
+      border: 3px solid var(--magic-col-5);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-1), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-2), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-3), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-4);
+    }
+    40% {
+      border: 3px solid var(--magic-col-4);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-5), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-1), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-2), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-3);
+    }
+    60% {
+      border: 3px solid var(--magic-col-3);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-4), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-5), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-1), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-2);
+    }
+    80% {
+      border: 3px solid var(--magic-col-2);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-3), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-4), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-5), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-1);
+    }
+    100% {
+      border: 3px solid var(--magic-col-1);
+      box-shadow: 10px -10px 0 -3px var(--background),
+        10px -10px var(--magic-col-2), 20px -20px 0 -3px var(--background),
+        20px -20px var(--magic-col-3), 30px -30px 0 -3px var(--background),
+        30px -30px var(--magic-col-4), 40px -40px 0 -3px var(--background),
+        40px -40px var(--magic-col-5);
+    }
   }
 }
 
