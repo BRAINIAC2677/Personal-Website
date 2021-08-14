@@ -1,4 +1,31 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .bar {
+    @apply h-1.5 w-full bg-black rounded-md my-1 mx-0 origin-left transition-all duration-500;
+  }
+
+  .menu-items {
+    @apply inline-block no-underline text-lg text-red-600 pb-1 border-red-600 transition-all ease-linear duration-200;
+  }
+
+  .menu-items:hover {
+    border-bottom-width: 3px;
+    transform: scale(1.1);
+  }
+
+  .btn {
+    @apply inline-block h-full w-full px-5 py-1 border-2 border-red-600 font-medium text-red-600;
+  }
+}
+
+@layer utilities {
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
