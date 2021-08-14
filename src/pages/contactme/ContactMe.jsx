@@ -15,7 +15,7 @@ function ContactMe() {
       className="h-auto w-screen p-8 sm:p-12 bg-primary-light"
     >
       <PageTitle title="Contact Me" />
-      <div className="flex flex-wrap justify-center items-center">
+      <div className="flex flex-wrap justify-center items-center sm:mt-24">
         {contactCards}
       </div>
     </div>

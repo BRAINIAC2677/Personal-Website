@@ -3,18 +3,26 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      spacing: {
+        100: "30rem",
+      },
+
       colors: {
         primary: {
           dark: "#252729",
           light: "#2B3236",
         },
-        secondary: "#48B078",
+        secondary: "#3966BF",
         accent: "#F8C61C",
         ink: "white",
       },
 
       fontFamily: {
         "permanent-marker": ['"Permanent Marker"', "cursive"],
+      },
+
+      boxShadow: {
+        "right-bottom": "10px -10px 0 -2px #252729,10px -10px #3966BF",
       },
 
       animation: {
