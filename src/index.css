@@ -19,6 +19,10 @@
   .btn {
     @apply inline-block h-full w-full px-5 py-1 border-2 border-red-600 font-medium text-red-600;
   }
+
+  .contact-icons {
+    @apply text-5xl;
+  }
 }
 
 @layer utilities {
