@@ -20,7 +20,7 @@ function ContactCard(props) {
   };
 
   return (
-    <div className="relative flex justify-between items-center h-24 w-72 m-4 p-4 bg-gray-300 hover:transform hover:scale-105 transition duration-300">
+    <div className="relative flex justify-between items-center h-24 w-72 m-4 p-4 bg-primary-dark text-ink hover:transform hover:scale-105 transition duration-300">
       <div className="space-y-2">
         <p className="font-bold text-xl">{name}</p>
         <p>{catchLine}</p>

@@ -4,11 +4,11 @@
 
 @layer components {
   .bar {
-    @apply h-1.5 w-full bg-black rounded-md my-1 mx-0 origin-left transition-all duration-500;
+    @apply h-1.5 w-full bg-accent rounded-md my-1 mx-0 origin-left transition-all duration-500;
   }
 
   .menu-items {
-    @apply inline-block no-underline text-lg text-red-600 pb-1 border-red-600 transition-all ease-linear duration-200;
+    @apply inline-block no-underline text-lg text-accent pb-1 border-accent transition-all ease-linear duration-200;
   }
 
   .menu-items:hover {
@@ -17,7 +17,7 @@
   }
 
   .btn {
-    @apply inline-block h-full w-full px-5 py-1 border-2 border-red-600 font-medium text-red-600;
+    @apply inline-block h-full w-full px-5 py-1 border-2 border-accent hover:bg-accent font-medium text-accent hover:text-secondary transition duration-200 hover:transform hover:scale-105;
   }
 
   .contact-icons {

@@ -1,7 +1,9 @@
 function Tag(props) {
   const { tag } = props;
   return (
-    <div className="p-1 rounded-sm bg-green-600 text-xs capitalize">{tag}</div>
+    <div className="p-1 rounded-sm bg-secondary font-medium text-ink text-xs capitalize">
+      {tag}
+    </div>
   );
 }
 

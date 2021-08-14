@@ -12,7 +12,7 @@ function Home() {
   }
 
   return (
-    <div id="home" className="relative h-screen w-screen bg-red-200">
+    <div id="home" className="relative h-screen w-screen bg-primary-dark">
       <MobileHeader data={{ showMenu, toggleMenu }}></MobileHeader>
       <Navbar></Navbar>
       <MainContent></MainContent>

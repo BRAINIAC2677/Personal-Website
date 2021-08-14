@@ -14,7 +14,7 @@ function MobileMenu(props) {
 
   return (
     <div
-      className="absolute inset-0 bg-gray-700"
+      className="absolute inset-0 bg-primary-dark"
       style={showMenu ? { display: "block" } : { display: "none" }}
     >
       <ul className="center">{menuItems}</ul>

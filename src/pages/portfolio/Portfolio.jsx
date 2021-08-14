@@ -8,7 +8,7 @@ function Portfolio() {
   });
 
   return (
-    <div id="portfolio" className="h-auto w-screen p-12 bg-gray-200">
+    <div id="portfolio" className="h-auto w-screen p-12 bg-primary-dark">
       <PageTitle title="Portfolio"></PageTitle>
       <div className="flex flex-wrap justify-around">{projectCards}</div>
     </div>
