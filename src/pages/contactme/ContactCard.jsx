@@ -20,10 +20,10 @@ function ContactCard(props) {
   };
 
   return (
-    <div className="relative flex justify-between items-center h-24 w-72 m-4 p-4 bg-primary-dark text-ink hover:transform hover:scale-105 transition duration-300">
+    <div className="relative flex justify-between items-center h-20 sm:h-24 w-72 my-4 sm:m-4 p-4 rounded bg-primary-dark text-ink hover:transform hover:scale-105 transition duration-300">
       <div className="space-y-2">
-        <p className="font-bold text-xl">{name}</p>
-        <p>{catchLine}</p>
+        <p className="font-bold text-lg sm:text-xl">{name}</p>
+        <p className="text-xs sm:text-base">{catchLine}</p>
       </div>
       {icons[icon]}
       {link != "" ? (

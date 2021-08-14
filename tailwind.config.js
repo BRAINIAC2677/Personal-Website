@@ -5,26 +5,35 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          dark: "#111111",
-          light: "#212529",
+          dark: "#252729",
+          light: "#2B3236",
         },
-        secondary: "green",
-        accent: "yellow",
+        secondary: "#48B078",
+        accent: "#F8C61C",
         ink: "white",
       },
 
+      fontFamily: {
+        "permanent-marker": ['"Permanent Marker"', "cursive"],
+      },
+
       animation: {
-        "appear-center": "appear-center .4s ease-in-out",
+        "slide-top-right": "slide-top-right .4s ease-in-out",
       },
 
       keyframes: {
-        "appear-center": {
-          from: { transform: "scale(0)" },
-          to: { transform: "scale(1)" },
+        "slide-top-right": {
+          from: {
+            "transform-origin": "top right",
+            transform: "scale(0)",
+            "border-radius": "50%",
+          },
+          to: { transform: "scale(1)", "border-radius": "0" },
         },
       },
     },
   },
+
   variants: {
     extend: {
       animation: ["hover"],

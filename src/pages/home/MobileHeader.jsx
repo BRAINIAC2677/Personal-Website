@@ -3,9 +3,9 @@ function MobileHeader(props) {
   return (
     <div className="flex lg:hidden justify-between p-4">
       <p className=""></p>
-      <div className="relative flex flex-column flex-wrap justify-between h-9 w-9 z-10">
+      <div className="relative flex flex-column flex-wrap justify-between h-9 w-9 z-30">
         <button
-          className="absolute w-full h-full z-20 opacity-0 cursor-pointer"
+          className="absolute w-full h-full z-40 opacity-0 cursor-pointer"
           onClick={toggleMenu}
         ></button>
         <div

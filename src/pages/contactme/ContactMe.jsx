@@ -10,7 +10,10 @@ function ContactMe() {
   console.log(contactCards.length);
 
   return (
-    <div id="contact-me" className="h-auto w-full p-12 bg-primary-light">
+    <div
+      id="contact-me"
+      className="h-auto w-screen p-8 sm:p-12 bg-primary-light"
+    >
       <PageTitle title="Contact Me" />
       <div className="flex flex-wrap justify-center items-center">
         {contactCards}

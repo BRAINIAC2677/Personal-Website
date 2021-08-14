@@ -2,12 +2,12 @@ import PageTitle from "../../global-components/PageTitle";
 
 function About() {
   return (
-    <div id="about" className="h-auto w-full p-12 bg-primary-light">
+    <div id="about" className="h-auto w-screen p-8 sm:p-12 bg-primary-light">
       <PageTitle title="About"></PageTitle>
-      <div className="flex justify-center items-center space-x-12 mt-24">
-        <div className="hidden lg:flex justify-center items-center magic-card mr-10 text-ink">
-          <p className="font-semibold text-2xl tracking-wider">
-            Life is beautiful
+      <div className="flex justify-center items-center lg:space-x-12 sm:mt-24">
+        <div className="magic-card hidden lg:flex justify-center items-center mr-10 text-ink">
+          <p className="font-permanent-marker font-semibold text-2xl tracking-wider uppercase">
+            life is beautiful
           </p>
         </div>
         <div className="hidden lg:block h-32 w-1 bg-secondary"></div>

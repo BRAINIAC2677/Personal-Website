@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
 :root {
   --magic-col-1: #22d2a0;
   --background: #192824;
@@ -17,20 +19,19 @@
   }
 
   .menu-items {
-    @apply inline-block no-underline text-lg text-accent pb-1 border-accent transition-all ease-linear duration-200;
+    @apply inline-block no-underline text-lg tracking-wider text-accent pb-1 border-accent transition-all ease-linear duration-200;
   }
 
   .menu-items:hover {
-    border-bottom-width: 3px;
-    transform: scale(1.1);
+    @apply border-b-2 transform scale-110;
   }
 
   .btn {
-    @apply inline-block h-full w-full px-5 py-1 border-2 border-accent hover:bg-accent font-medium text-accent hover:text-secondary transition duration-200 hover:transform hover:scale-105;
+    @apply inline-block px-5 py-0.5 sm:py-1 border-2 border-accent hover:bg-accent font-medium text-accent hover:text-primary-dark transition duration-200 hover:transform hover:scale-105;
   }
 
   .contact-icons {
-    @apply text-5xl;
+    @apply text-3xl sm:text-5xl;
   }
 
   .magic-card {
@@ -45,6 +46,7 @@
     animation: shadow-wave 1s ease infinite;
   }
 
+  /* animating magic card */
   @keyframes shadow-wave {
     0% {
       border: 3px solid var(--magic-col-1);
