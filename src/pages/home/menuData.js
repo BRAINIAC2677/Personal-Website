@@ -1,9 +1,8 @@
 const menuData = [
-  { href: "#", text: "Home" },
-  { href: "#", text: "Portfolio" },
-  { href: "#", text: "About" },
-  { href: "#", text: "Resume" },
-  { href: "#", text: "Contact Me" },
+  { href: "#home", text: "Home" },
+  { href: "#about", text: "About" },
+  { href: "#portfolio", text: "Portfolio" },
+  { href: "#contact-me", text: "Contact Me" },
 ];
 
 export default menuData;
